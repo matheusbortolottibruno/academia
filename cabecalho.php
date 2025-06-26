@@ -9,13 +9,15 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" class="logo" height="150">
-        <h1>Academia zeus</h1>
+        
+        <h1>𝓐𝓬𝓪𝓭𝓮𝓶𝓲𝓪 𝓩𝓮𝓾𝓼</h1>
         <nav>
             <a href="index.php">Home</a>
             <a href="listadenoticias.php">aparelhos</a>
+             <img src="img/logo.png" class="logo" height="150">
             <a href="listadenoticias.php">Treinos</a>
             <a href="contato.php">Contato</a>
+           
            
         </nav>
     </header>

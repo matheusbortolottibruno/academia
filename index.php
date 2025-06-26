@@ -5,30 +5,7 @@ include "banner.php";
 <div class="container">
    
 
-    <div class="row mb-5">
-        <?php
-       include "conexao.php";
-
-        $sql = "select * from filmes  limit 4";
-        $resultado = mysqli_query($conexao, $sql);
-
-        // echo "<pre>";
-        // print_r($resultado);
-        // exit();
-        while($linha = mysqli_fetch_assoc($resultado)){
-            ?>
-            <div class="col-3 text-center mb-5">
-                <img src="<?=$linha['foto']?>" class="img-fluid capa-filme">
-                <h3><?=$linha['titulo'];?></h3>
-                <span>⭐ <?=$linha['avaliacao']?>/10</span>
-            </div>
-        <?php
-        }
-          mysqli_close($conexao);
-        ?>
-        
-    </div>
-
+    # telefone 
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
