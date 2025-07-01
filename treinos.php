@@ -4,12 +4,12 @@ include "cabecalho.php";
 
 <div class="container">
 
-    <h2>Todos os filmes</h2>
+    <h2>Todos os Treinos</h2>
     <div class="row">
          <?php
       include "conexao.php";
 
-        $sql = "select * from filmes order by titulo asc";
+        $sql = "select * from academia order by treino asc";
         $resultado = mysqli_query($conexao, $sql);
 
         // echo "<pre>";
@@ -19,11 +19,11 @@ include "cabecalho.php";
             ?>
         <div class="col-3 text-center mb-5">
             <div class="card">
-                <img src="<?=$linha['foto']?>" class="img-fluid capa-filme">
-                    <h3><?php echo mb_strimwidth($linha['titulo'], 0, 20, "...");?></h3>   
+                <img src="<?=$linha['foto']?>" class="img-fluid capa-academia">
+                    <h3><?php echo mb_strimwidth($linha['treino'], 0, 20, "...");?></h3>   
                     
-                    <p class="card-text">⭐<?=$linha['avaliacao']?>/10</p>
-                    <a href="umfilme.php?id=<?=$linha['id'];?>" class="btn btn-primary ">Veja detalhes</a>
+                    <p class="card-text">💪🏻<?=$linha['avaliacao']?>/10🏋🏻‍♀️</p>
+                    <a href="treinos.php?id=<?=$linha['id'];?>" class="btn btn-primary ">Veja detalhes</a>
                 
             </div>
         </div>

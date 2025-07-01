@@ -8,18 +8,25 @@ include "conexao.php";
 // 4= execucao do sql
   $resultado = mysqli_query($conexao, $sql);
 // 5= definicao das variavel  
-$titulo = "";
-$historia = "";
-$categoria = "";
-$avaliaçao = "";
+$aulas = "";
+$equipamentos = "";
+$treino = "";
+$atendimento = "";
 $foto = "";
-// 6= laço com as informaçao dos filme
+$avaliacao = "";
+$planos = "";
+$treinos = "";
+// 6= laço com as informaçao dos academis
 while($linha = mysqli_fetch_assoc($resultado)){
-   $titulo = $linha["titulo"];
-    $historia = $linha["historia"];
-     $categoria = $linha["categoria"];
-      $avaliacao = $linha["avaliacao"];
+   $aulas = $linha["aulas"];
+    $equipamentos = $linha["quipamentos "];
+     $treino = $linha["treino "];
+      $atendimento = $linha["atendimento"];
        $foto = $linha["foto"];
+         $avaliacao = $linha["avaliacao"];
+           $planos = $linha["planos"];
+             $treinos = $linha["treinos"];
+              
 }
 // 7= mostrar as informaçaoes na tela 
 
