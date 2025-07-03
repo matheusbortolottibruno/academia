@@ -5,8 +5,6 @@ include "banner.php";
 <div class="container">
    
 
-    # telefone 
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -26,4 +24,7 @@ include "banner.php";
     
 
 </div>
-<?php include "rodape.php"; ?>
+<?php include "rodape.php"; ?> 
+<h6>telefone:(19)999-9999</h6>
+<h6>E_MAIL:zeusacademia@gmaisl.com</h6>
+

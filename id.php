@@ -19,13 +19,13 @@ $treinos = "";
 // 6= laço com as informaçao dos academis
 while($linha = mysqli_fetch_assoc($resultado)){
    $aulas = $linha["aulas"];
-    $equipamentos = $linha["quipamentos "];
+    $exercicios = $linha["exercicios "];
      $treino = $linha["treino "];
       $atendimento = $linha["atendimento"];
        $foto = $linha["foto"];
          $avaliacao = $linha["avaliacao"];
            $planos = $linha["planos"];
-             $treinos = $linha["treinos"];
+             $frequencia = $linha["frequencia"];
               
 }
 // 7= mostrar as informaçaoes na tela 

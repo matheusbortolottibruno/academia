@@ -23,7 +23,7 @@ include "cabecalho.php";
                     <h3><?php echo mb_strimwidth($linha['treino'], 0, 20, "...");?></h3>   
                     
                     <p class="card-text">💪🏻<?=$linha['avaliacao']?>/10🏋🏻‍♀️</p>
-                    <a href="treinos.php?id=<?=$linha['id'];?>" class="btn btn-primary ">Veja detalhes</a>
+                    <a href="treinos.php?id=<?=$linha['id'];?>"></a>
                 
             </div>
         </div>
