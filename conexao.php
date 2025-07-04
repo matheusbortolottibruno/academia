@@ -1,7 +1,7 @@
 <?php
   /* inicio da conexão com o BD */
         $servidor = 'localhost';
-        $bd = 'academia';
+        $bd = 'bd_academia';
         $usuario = 'root';
         $senha = '';
 

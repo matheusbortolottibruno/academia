@@ -22,8 +22,8 @@ include "cabecalho.php";
                 <img src="<?=$linha['foto']?>" class="img-fluid capa-academia">
                     <h3><?php echo mb_strimwidth($linha['treino'], 0, 20, "...");?></h3>   
                     
-                    <p class="card-text">💪🏻<?=$linha['avaliacao']?>/10🏋🏻‍♀️</p>
-                    <a href="treinos.php?id=<?=$linha['id'];?>"></a>
+                    <p class="card-text">💪🏻<?['avaliacao']?>🏋🏻‍♀️</p>
+                    
                 
             </div>
         </div>
