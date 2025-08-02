@@ -1,19 +1,29 @@
-<?php
-include "cabecalho.php";
-?>
-<div class="form-container">
-    <h2>Fale com a gente </h2>
-    <form action="resposta.php" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário Academia</title>
+</head>
+<body>
+  <h1>Cadastro de Aluno - Academia</h1>
+  <form action="/submit" method="POST">
+    <label for="nome">Nome completo:</label><br />
+    <input type="text" id="nome" name="nome" required /><br /><br />
 
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    <label for="idade">Idade:</label><br />
+    <input type="number" id="idade" name="idade" min="10" max="100" required /><br /><br />
 
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+    <label>Sexo:</label><br />
+    <input type="radio" id="masculino" name="sexo" value="masculino" required />
+    <label for="masculino">Masculino</label><br />
+    <input type="radio" id="feminino" name="sexo" value="feminino" />
+    <label for="feminino">Feminino</label><br /><br />
 
-        <button type="submit">Enviar</button>
-    </form>
-</div>
-<?php include "rodape.php"; ?>
+
+    <label for="objetivo">Objetivo Principal:</label><br />
+    <textarea id="objetivo" name="objetivo" rows="4" cols="30" placeholder="Ex: Perder peso, ganhar massa muscular..." required></textarea><br /><br />
+
+    <input type="submit" value="Enviar" />
+  </form>
+</body>
+</html>

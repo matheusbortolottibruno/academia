@@ -11,21 +11,16 @@ include "conexao.php";
 $aulas = "";
 $equipamentos = "";
 $treino = "";
-$atendimento = "";
 $foto = "";
-$avaliacao = "";
-$planos = "";
-$treinos = "";
 // 6= laço com as informaçao dos academis
 while($linha = mysqli_fetch_assoc($resultado)){
    $aulas = $linha["aulas"];
-    $exercicios = $linha["exercicios "];
+    $equipamentos = $linha["equipamentos"];
      $treino = $linha["treino "];
-      $atendimento = $linha["atendimento"];
        $foto = $linha["foto"];
-         $avaliacao = $linha["avaliacao"];
-           $planos = $linha["planos"];
-             $frequencia = $linha["frequencia"];
+        
+          
+             
               
 }
 // 7= mostrar as informaçaoes na tela 
